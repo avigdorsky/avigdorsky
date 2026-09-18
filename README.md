@@ -28,7 +28,7 @@ root@avigdorsky:~$ neofetch
   ██║  ██║ ╚████╔╝     Focus .....: AI agents · ML / CV · cybersecurity
   ╚═╝  ╚═╝  ╚═══╝      Also ......: CTO @ CyberSaver (cybersaver.io)
                        Education .: Ph.D. (Eng.) · MIPT (Phystech) · MEPhI (cybersecurity) · Tsinghua
-                       Location ..: Tel-Aviv ⇄ Yakutsk (Arctic-born)
+                       Location ..: Tel-Aviv (Arctic-born)
                        Shell .....: zsh + LangGraph + Telegram
                        Uptime ....: 5 countries · 3 startups · ∞ coffee
 ```
