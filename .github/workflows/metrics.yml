@@ -1,0 +1,81 @@
+name: Generate metrics
+
+on:
+  schedule:
+    - cron: "30 0 * * *"     # daily, 00:30 UTC (after snake)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # ---------- 1) terminal-style card: calendar + languages + lines ----------
+      # The "terminal" template supports only: isocalendar, languages, lines, gists, screenshot, pagespeed, traffic.
+      - name: metrics.terminal.svg
+        uses: lowlighter/metrics@latest
+        with:
+          # PAT (classic) with: public_repo, read:user, read:org  (+ repo if you want private repos counted)
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: avigdorsky
+          template: terminal
+          filename: metrics.terminal.svg
+          base: header, repositories
+          config_timezone: Asia/Yakutsk
+          config_octicon: yes
+          config_twemoji: yes
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_ignored: html, css, makefile, dockerfile
+          plugin_languages_indepth: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_recent_days: 30
+
+          plugin_lines: yes
+          plugin_lines_sections: base
+
+      # ---------- 2) classic (dark) card: habits + achievements + stars + notable ----------
+      - name: metrics.plugins.svg
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: avigdorsky
+          template: classic
+          filename: metrics.plugins.svg
+          base: ""
+          config_timezone: Asia/Yakutsk
+          config_octicon: yes
+          config_twemoji: yes
+
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 30
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_indepth: yes
+
+          plugin_followup: yes
+          plugin_followup_sections: repositories
