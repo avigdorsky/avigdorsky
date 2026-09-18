@@ -26,7 +26,7 @@ root@avigdorsky:~$ neofetch
                 ███████║██║   ██║                 Role ......: Co-founder & CTO-type builder
                 ██╔══██║╚██╗ ██╔╝                 Company ...: AVAREANGE — Human Security OS
                 ██║  ██║ ╚████╔╝                  Focus .....: AI-first cybersecurity · vCISO
-                ╚═╝  ╚═╝  ╚═══╝                   Also ......: CTO @ Kiberzashchitnik · AntAi
+                ╚═╝  ╚═╝  ╚═══╝             
                                                   Degree ....: Ph.D. (Eng.) · MIPT · MEPhI · Tsinghua
                                                   Location ..: Tel-Aviv ⇄ Yakutsk (Arctic-born)
                                                   Shell .....: zsh + LangGraph + Telegram
