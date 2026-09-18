@@ -11,7 +11,7 @@
 
 [![AVAREANGE](https://img.shields.io/badge/AVAREANGE-Human_Security_OS-00FF41?style=for-the-badge&logo=springsecurity&logoColor=0D1117&labelColor=0D1117&color=00FF41)](https://avareange.ru)
 [![Telegram](https://img.shields.io/badge/Telegram-@avigdorsky-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0D1117)](https://t.me/avigdorsky)
-[![Email](https://img.shields.io/badge/Email-abraham.belostotsky-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:abraham.belostotsky@gmail.com)
+[![Email](https://img.shields.io/badge/Email-avigdorsky%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:avigdorsky@gmail.com)
 [![Profile views](https://komarev.com/ghpvc/?username=avigdorsky&style=for-the-badge&color=00FF41&labelColor=0D1117&label=VISITORS)](https://github.com/avigdorsky)
 
 </div>
@@ -21,16 +21,16 @@
 ```console
 root@avigdorsky:~$ neofetch
 
-                 ██████╗ ██╗   ██╗                 viktor@avareange
-                ██╔══██╗██║   ██║                 -----------------------------------------
-                ███████║██║   ██║                 Role ......: Co-founder & CTO-type builder
-                ██╔══██║╚██╗ ██╔╝                 Company ...: AVAREANGE — Human Security OS
-                ██║  ██║ ╚████╔╝                  Focus .....: AI-first cybersecurity · vCISO
-                ╚═╝  ╚═╝  ╚═══╝             
-                                                  Degree ....: Ph.D. (Eng.) · MIPT · MEPhI · Tsinghua
-                                                  Location ..: Tel-Aviv ⇄ Yakutsk (Arctic-born)
-                                                  Shell .....: zsh + LangGraph + Telegram
-                                                  Uptime ....: 5 countries · 3 startups · ∞ coffee
+   ██████╗ ██╗   ██╗    viktor@avareange
+  ██╔══██╗██║   ██║    ---------------------------------------------
+  ███████║██║   ██║    Role ....: Co-founder & builder
+  ██╔══██║╚██╗ ██╔╝    Company .: AVAREANGE — Human Security OS
+  ██║  ██║ ╚████╔╝     Focus ...: AI-first cybersecurity · vCISO
+  ╚═╝  ╚═╝  ╚═══╝      Also ....: CTO @ CyberSaver (cybersaver.io)
+                       Degree ..: Ph.D. (Eng.) · MIPT · MEPhI · Tsinghua
+                       Location : Tel-Aviv ⇄ Yakutsk (Arctic-born)
+                       Shell ...: zsh + LangGraph + Telegram
+                       Uptime ..: 5 countries · 3 startups · ∞ coffee
 ```
 
 <br/>
@@ -45,17 +45,26 @@ root@avigdorsky:~$ neofetch
 
 ## `$ ls ~/arsenal`
 
-| Project | What it is | Stack | Status |
-|:--|:--|:--|:--|
-| 🛡️ **[AVAREANGE Core](https://avareange.ru)** | Human Security OS: vCISO, human-risk scoring, GRC · SOAR · SAT | Python · LangGraph · Postgres (AGE + pgvector) | `prod` |
-| 🎣 **AVAREANGE Ampir** | AI-driven phishing & social-engineering simulation module | Python · TypeScript · Telegram | `active` |
-| 🏢 **AVAREANGE MSSP** | Multi-tenant security-awareness panel for MSSP partners | TypeScript · FastAPI | `dev` |
-| 🎮 **Kiberzashchitnik** | Gamified mobile AI agent for digital literacy (CTO) | Swift · Kotlin · LLM agents | `active` |
-| 🧪 **Preon AI** | Educational attack simulations for training defenders | Python · agents | `r&d` |
-| 📻 **Lakonia** | Tactical AI assistant for radio communications | Python · STT/TTS · edge | `r&d` |
-| 🤖 **AntAi** | Global-facing entity for the AI-agent product line | — | `stealth` |
+### 🛡️ [AVAREANGE](https://avareange.ru) — Human Security OS `prod`
 
-<br/>
+> Turn employees into the first line of cyber defense in 2 weeks. Listed in the Russian Unified Software Registry.
+> Customers report **5× fewer human-caused incidents** and **−70% attack risk**.
+
+| Module | What it does |
+|:--|:--|
+| 📊 **Human-risk scoring** | Behaviour-based risk model per employee / department |
+| 🎣 **Phishing simulations** | Automated pentest of people: email, attachments, messengers |
+| 🎓 **LMS + monitoring** | SCORM courses, real-time dashboards and analytics |
+| 🤖 **AI phishing analyst** | Chat-bot, mail plugin and browser extension that scores suspicious content |
+| 🏢 **Org & access** | Org hierarchy, LDAP / AD / SSO / 2FA integrations |
+| 🧩 **MSSP panel** | Multi-tenant console for managed-security partners `dev` |
+
+**Stack:** Python · LangGraph agents · Postgres (Apache AGE + pgvector) · TypeScript · Telegram-first UX · local LLMs on 2× NVIDIA H200
+
+### 🎮 [CyberSaver / Киберзащитник](https://cybersaver.io) — pet project, CTO `active`
+
+Gamified mobile app that makes anyone a conscious, protected user: AI assistant that scores suspicious messages & links (1–10),
+3–5-minute courses, mini-games, XP · badges · leaderboards. iOS · Android · RuStore. Swift · Kotlin · LLM agents.
 
 ## `$ cat stack.yml`
 
@@ -91,7 +100,7 @@ root@avigdorsky:~$ neofetch
 ## `$ tail -f ~/now.log`
 
 ```diff
-+ shipping   AVAREANGE Ampir — AI social-engineering sims for the RU market
++ shipping   AVAREANGE — AI phishing analyst & human-risk scoring
 + building   MSSP client panel (msspdev.avareange.ru)
 + running    2× H200 in-house for local LLM inference & evals
 + exploring  agentic RAG over graph + vectors (Apache AGE + pgvector)
@@ -113,11 +122,13 @@ root@avigdorsky:~$ neofetch
      lowlighter/metrics into metrics.svg — see .github/workflows/metrics.yml.
      The public github-readme-stats.vercel.app instance is paused (503) as of 2026-09,
      so external stat cards are intentionally NOT used here. -->
+<!-- TODO: uncomment after adding METRICS_TOKEN secret and running "Generate metrics"
 <img src="https://raw.githubusercontent.com/avigdorsky/avigdorsky/main/metrics.terminal.svg" alt="terminal metrics: commit calendar, languages, lines (lowlighter/metrics)" />
 
 <br/><br/>
 
 <img src="https://raw.githubusercontent.com/avigdorsky/avigdorsky/main/metrics.plugins.svg" alt="habits, achievements, stars, notable contributions (lowlighter/metrics)" />
+-->
 
 </div>
 
@@ -143,7 +154,7 @@ root@avigdorsky:~$ neofetch
 {
   "telegram":  "https://t.me/avigdorsky",
   "web":       "https://avareange.ru",
-  "email":     "abraham.belostotsky@gmail.com",
+  "email":     "avigdorsky@gmail.com",
   "timezone":  "Asia/Yakutsk (UTC+9) / Asia/Jerusalem (UTC+3)",
   "open_to":   ["security research collab", "agentic-AI partnerships", "MSSP integrations"]
 }
